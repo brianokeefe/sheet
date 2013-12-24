@@ -142,14 +142,14 @@ blockquote {
    4. Header
    ====================================== */
 
-.sheet-header-content {
+#sheet-header-content {
 	margin: 0 auto;
 	max-width: 980px;
 	padding: 10px;
 }
 
 @media screen and (min-width: 768px) {
-	.sheet-header-content {
+	#sheet-header-content {
 		padding-left: 30px;
 		padding-right: 30px;
 	}
