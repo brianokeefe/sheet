@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+	<head>
+		<title>{{meta_title}}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+		<meta name="description" content="{{meta_description}}" />
+
+		<meta name="HandheldFriendly" content="True" />
+		<meta name="MobileOptimized" content="320" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<link rel="stylesheet" href="/assets/fonts/font-awesome/css/font-awesome.min.css">
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+		<link rel="stylesheet" href="/assets/css/pure.min.css">
+		<link rel="stylesheet" href="/assets/css/screen.css">
+
+		{{ghost_head}}
+	</head>
+
+	<body>
+		<div id="sheet-layer-bottom" {{#if @blog.cover}}style="background-image: url({{@blog.cover}})"{{/if}}>
+			<header>
+				<div class="sheet-header-content">
+					<div class="pure-g-r">
+						<div class="pure-u-1-2">
+							<a class="sheet-title" href="{{@blog.url}}"><h1 class="sheet-header-title">{{@blog.title}}</h1></a>
+						</div>
+						<div class="pure-u-1-2">
+							<h1 class="sheet-header-secondary"></h1>
+						</div>
+					</div>
+				</div>
+			</header>
+		</div>
+
+		<div id="sheet-layer-top">
+			<div class="sheet-page-content">
+				{{{body}}}
+			</div>
+
+			<footer class="sheet-footer">
+				<div class="sheet-footer-content">
+					<div class="pure-g-r">
+						<div class="pure-u-1-2 sheet-copyright">
+							&copy; <time datetime="{{date format='YYYY'}}">{{date format="YYYY"}}</time> <a href="{{@blog.url}}">{{@blog.title}}</a>
+						</div>
+
+						<div class="pure-u-1-2 sheet-footer-secondary">
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
+
+		{{ghost_foot}}
+
+		<script src="/assets/js/main.js"></script>
+
+	</body>
+</html>

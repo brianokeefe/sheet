@@ -1,0 +1,15 @@
+<nav class="pure-g" role="pagination">
+	<div class="pure-u-1-3 sheet-newer-posts">
+		{{#if prev}}
+			<a class="sheet-btn" href="{{pageUrl prev}}">&larr; Newer Posts</a>
+		{{/if}}
+	</div>
+    <div class="pure-u-1-3">
+    	<div class="sheet-page-number">Page {{page}} / {{pages}}</div>
+    </div>
+    <div class="pure-u-1-3 sheet-older-posts">
+		{{#if next}}
+			<a class="sheet-btn" href="{{pageUrl next}}">Older Posts &rarr;</a>
+		{{/if}}
+	</div>
+</nav>

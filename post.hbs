@@ -1,0 +1,59 @@
+{{!< default}}
+
+{{#post}}
+	<div class="pure-g-r">
+		<main role="main" class="pure-u-3-4">
+			<article class="sheet-panel sheet-post {{post_class}}">
+					<h1 class="sheet-post-title">{{{title}}}</h1>
+					<header class="sheet-post-meta">
+						<time datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMM YYYY"}}</time>
+						{{#if tags}}
+							<i class="fa fa-tags sheet-post-tags"></i> {{tags}}
+						{{/if}}
+					</header>
+
+					<hr/>
+
+					<section class="post-content">
+					    {{content}}
+					</section>
+			</article>
+		</main>
+
+		<footer class="pure-u-3-4">
+			<div class="sheet-panel">
+				<div class="pure-g-r">
+					<div class="pure-u-1-4">
+						{{#if author.image}}
+							<img class="sheet-author-image" src="{{author.image}}" alt="{{author}}" />
+						{{/if}}
+					</div>
+
+					<div class="pure-u-3-4">
+						<div class="sheet-author-blurb">
+							<h2 class="sheet-author-name">{{author.name}}</h2>
+							<p class="sheet-author-bio">{{author.bio}}</p>
+							<p class="sheet-author-bio-sub">
+								{{#if author.location}}
+									<a href="https://maps.google.com/?q={{author.location}}" target="_blank">{{author.location}}</a>
+								{{/if}}
+								{{#if author.website}}
+									{{#if author.location}}
+										&middot;
+									{{/if}}
+									<a href="{{author.website}}">{{author.website}}</a>
+								{{/if}}
+							</p>
+						</div>
+					</div>
+
+					<div class="pure-u-1">
+						<div class="sheet-author-links">
+							<a class="sheet-btn" href="{{@blog.url}}/rss/"><i class="fa fa-rss-square"></i> Subscribe</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+{{/post}}

@@ -1,0 +1,45 @@
+{{!< default}}
+
+<div class="pure-g-r">
+	<div class="pure-u-3-4">
+		<main role="main">
+
+			{{#foreach posts}}
+				<a class="sheet-post {{post_class}}" href='{{url}}'>
+					<article class="sheet-panel">
+						<header>
+							<h2 class="sheet-title sheet-post-title">{{{title}}}</h2>
+							<div class="sheet-post-meta">
+								<time datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMM YYYY"}}</time>
+								{{#if tags}}
+									<i class="fa fa-tags sheet-post-tags"></i> {{tags}}
+								{{/if}}
+							</div>
+						</header>
+
+						<section>
+							<p class="sheet-post-excerpt">{{excerpt}}&hellip;</p>
+							<div class="sheet-read-more">READ MORE <i class="fa fa-caret-right"></i></div>
+						</section>
+					</article>
+				</a>
+			{{/foreach}}
+
+			<div class="sheet-panel">
+				{{pagination}}
+			</div>
+		</main>
+	</div>
+
+	<div class="pure-u-1-4">
+		<div class="sheet-panel sheet-sidebar">
+			{{#if @blog.logo}}
+				<img class="sheet-sidebar-logo" src="{{@blog.logo}}" alt="{{@blog.title}} Logo" />
+			{{/if}}
+			{{#if @blog.description}}
+				<p class="sheet-sidebar-desc">{{@blog.description}}</p>
+			{{/if}}
+			<div class="sheet-sidebar-subscribe"><a class="sheet-btn" href="{{@blog.url}}/rss/"><i class="fa fa-rss-square"></i> Subscribe</a></div>
+		</div>
+	</div>
+</div>
