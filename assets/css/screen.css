@@ -4,12 +4,10 @@
 
 /*
 	1. Scaffolding
-	2. Utility
-	3. General
-	4. Header
-	5. Body
-	6. Footer
-	7. bokstuff
+	2. General
+	3. Header
+	4. Body
+	5. Footer
 */
 
 
@@ -54,12 +52,7 @@ section *:last-child {
 }
 
 /* ======================================
-   2. Utility
-   ====================================== */
-
-
-/* ======================================
-   3. General
+   2. General
    ====================================== */
 
 h1, h2, h3, h4, h5, h6 {
@@ -139,7 +132,7 @@ blockquote {
 }
 
 /* ======================================
-   4. Header
+   3. Header
    ====================================== */
 
 #sheet-header-content {
@@ -185,7 +178,7 @@ blockquote {
 }
 
 /* ======================================
-   5. Page content
+   4. Page content
    ====================================== */
 
 .sheet-page-content {
@@ -269,7 +262,7 @@ a.sheet-post:hover, a.sheet-post:hover .sheet-post-title {
 	font-variant: small-caps;
 	display: block;
 	text-align: right;
-	/*color: #858585;*/
+	margin-top: 15px;
 }
 
 /* sidebar */
@@ -407,7 +400,7 @@ a.sheet-post:hover, a.sheet-post:hover .sheet-post-title {
 }
 
 /* ======================================
-   6. Footer
+   5. Footer
    ====================================== */
 
 .sheet-footer {
