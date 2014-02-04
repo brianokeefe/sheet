@@ -154,6 +154,17 @@ blockquote {
 	color: #fff;
 }
 
+.sheet-title .sheet-header-title {
+	font-family: "Open Sans", sans-serif;
+}
+
+.sheet-header-secondary {
+	font-weight: 100;
+	font-size: 22px;
+	margin-top: 0px;
+	-webkit-font-smoothing: antialiased;
+}
+
 .sheet-header-secondary:empty {
 	display: none;
 }
