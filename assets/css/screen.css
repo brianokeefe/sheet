@@ -81,6 +81,11 @@ a:hover {
 p, li {
 	color: #757575;
 	font-size: 18px;
+	line-height: 1.45;
+}
+
+li + li {
+	margin-top: 7px;
 }
 
 hr {
