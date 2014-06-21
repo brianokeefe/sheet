@@ -129,7 +129,6 @@ blockquote {
 }
 
 .sheet-btn:link, .sheet-btn:visited {
-	height: 22px;
 	border: 1px solid #aaa;
 	padding: 5px;
 	display: inline-block;
@@ -147,13 +146,13 @@ blockquote {
 .sheet-btn .fa {
 	float: left;
 	font-size: 16px;
-	line-height: 23px;
+	line-height: 22px;
 }
 
 .sheet-btn span {
-	float: right;
-	line-height: 22px;
 	padding-left: 4px;
+	font-size: 16px;
+	line-height: 16px;
 }
 
 /* ======================================
@@ -331,7 +330,6 @@ a.sheet-post:hover, a.sheet-post:hover .sheet-post-title {
 }
 
 .sheet-sidebar-subscribe {
-	height: 34px;
 	text-align: center;
 	margin-top: 20px;
 }
@@ -425,7 +423,6 @@ a.sheet-post:hover, a.sheet-post:hover .sheet-post-title {
 }
 
 .sheet-author-links {
-	height: 34px;
 	margin-top: 25px;
 	text-align: center;
 }
