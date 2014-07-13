@@ -1,4 +1,6 @@
 {
   "name": "Sheet",
-  "version": "0.7.2"
+  "version": "0.7.2",
+  "author": "Brian O'Keefe <brian@bokstuff.com",
+  "description": "A clean, responsive theme for Ghost 0.4+ blogs."
 }
