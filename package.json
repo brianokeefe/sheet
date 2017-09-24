@@ -1,6 +1,12 @@
 {
-  "name": "Sheet",
-  "version": "0.7.3",
-  "author": "Brian O'Keefe <brian@bokstuff.com",
-  "description": "A clean, responsive theme for Ghost 0.4+ blogs."
+  "name": "sheet",
+  "version": "1.0.0",
+  "author": {
+    "name": "Brian O'Keefe",
+    "email": "brian@bokstuff.com"
+  },
+  "description": "A clean, responsive theme for Ghost 1.x.x blogs.",
+  "config": {
+    "posts_per_page": 5
+  }
 }
