@@ -1,6 +1,6 @@
 # Sheet
 
-Sheet is a clean, responsive theme for Ghost 0.4+ blogs. You can view a demo (with a few minor modifications) [right here](http://bokstuff.com/blog).
+Sheet is a clean, responsive theme for Ghost 1.x.x blogs. You can view a demo (with a few minor modifications) [right here](http://bokstuff.com/blog).
 
 ![Screenshot](http://i.imgur.com/8YnvXFL.png)
 
